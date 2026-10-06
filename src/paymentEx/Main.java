@@ -6,9 +6,12 @@ public class Main {
         Payment creditCard = new CreditCardPayment(50000);
         Payment naverPay = new NaverPayPayment(30000);
 
+        naverPay.processPayment();   // 결제
+        naverPay.displayAmount(); // 결제 금액 출력
+
         // 결제 처리 (정적 메서드 사용)
-        PaymentProcessor.process(creditCard);
-        PaymentProcessor.process(naverPay);
+//        PaymentProcessor.process(creditCard);
+//        PaymentProcessor.process(naverPay);
 
         System.out.println();
 
@@ -19,8 +22,8 @@ public class Main {
             ((Refundable) creditCard).refund();
         }
 
-        if (naverPay instanceof Refundable) {
-            ((Refundable) naverPay).refund();
-        }
+//        if (naverPay instanceof Refundable) {
+//            ((Refundable) naverPay).refund();
+//        }
     }
 }
