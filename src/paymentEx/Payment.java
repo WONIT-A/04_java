@@ -29,7 +29,7 @@ public abstract class Payment {
     abstract void processPayment();
 
     // 구상메서드: 자식클래스에서 그대로 가져다 씀
-    void displayAmount() {
-        System.out.println(this.amount + "금액이 결제됩니다.");
+    double displayAmount() {
+        return this.amount;
     }
 }
