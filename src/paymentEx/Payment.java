@@ -13,7 +13,7 @@ package paymentEx;
 
 public abstract class Payment {
 
-    private static int count; // 클래스 변수: int는 0으로 초기화
+    private static int count; // 결제 성공을 count 변수 클래스 변수: int는 0으로 초기화
     private final double amount; // 인스턴스 변수: double 0.0으로 초기화
                                  // 최초로 인스턴스가 만들어질 때 받은 값이 이후에 수정불가
 
